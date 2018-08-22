@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/desc"
+    android:accessibilityEventTypes="typeNotificationStateChanged|typeWindowStateChanged"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:accessibilityFlags="flagDefault"
+    android:canRetrieveWindowContent="true"
+    android:notificationTimeout="100"
+    android:packageNames="com.tencent.mm" />
+<!--android:description 这个是设置服务的描述，在用户授权的界面可以看到。-->
+<!--android:accessibilityEventTypes需要用到typeNotificationStateChanged(通知变化事件)、typeWindowStateChanged(界面变化事件)-->
+<!--android:accessibilityFeedbackType 这个是设置反馈方式 feedbackGeneric	通用反馈-->
+
+<!--android:packageNames 这个是要监听应用的包名，如果要监听多个应用，则用,去分隔-->
